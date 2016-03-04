@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Discover Campus :: Home</title>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+		<script src="semantic/dist/semantic.min.js"></script>
+		
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="semantic/dist/components/visibility.min.js"></script>
+  		<script src="semantic/dist/components/sidebar.min.js"></script>
+  		<script src="semantic/dist/components/transition.min.js"></script>
+		
+		<script>
+			$(document)
+				.ready(function() {
+
+				// create sidebar and attach to menu open
+				$('.ui.sidebar')
+					.sidebar('attach events', '.toc.item')
+				;
+
+				})
+			;
+		</script>
+		
+	<style type="text/css">
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .footer.segment {
+      padding: 4em 0em;
+    }
+
+    .top.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      /*.ui.fixed.menu {
+        display: none !important;
+      }*/
+      .ui.pointing.menu .item,
+      .ui.pointing.menu .menu {
+        display: none;
+      }
+      .ui.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+	  
+    }
+
+		</style>
+	</head>
+	
+	<body>
+		<!-- Sidebar Menu -->
+		<div class="ui left demo vertical inverted sidebar labeled icon menu">
+			<a class="active item"><i class="home icon"></i> Discover Campus</a>
+			<a class="item"><i class="grid layout icon"></i> discover</a>
+			<a class="item"><i class="line chart icon"></i> solutions</a>
+			<a class="item"><i class="lab icon"></i> how it works</a>
+			<a class="item"><i class="comments icon"></i> contact</a>
+		</div>
+
+		<!-- Page Contents -->
+	<div class="pusher">
+		<div class="ui inverted orange vertical masthead center aligned segment">
+
+			<div class="ui container">
+				<div class="ui large top pointing fixed menu">
+					<a class="toc item">
+						<i class="sidebar icon"></i>
+					</a>
+					<a class="active item">Discover Campus</a>
+					<a class="item"><i class="grid layout icon"></i> discover</a>
+					<a class="item"><i class="line chart icon"></i> solutions</a>
+					<a class="item"><i class="lab icon"></i> how it works</a>
+					<a class="item"><i class="comments icon"></i> contact</a>
+					<div class="right item">
+						<a class="ui primary button">Demo</a>
+					</div>	
+				</div>
+			</div>
+
+			<div class="ui text container right aligned">
+			<h1 class="ui inverted header">
+				Discover Campus
+			</h1>
+			<h2>Navigation Built For You</h2>
+			<div class="ui huge primary button">Learn more <i class="right arrow icon"></i></div>
+			</div>
+
+		</div>
+
+		<div class="ui vertical stripe segment">
+			<div class="ui middle aligned stackable grid container">
+				<div class="row">
+					<div class="eight wide column">
+						<h3 class="ui header">Customized &amp; Personalized</h3>
+						<p>Data is collected with an eye for the finest details to provide the best experience for users.</p>
+						
+						<h3 class="ui header">Big Data Driven</h3>
+						<p>We enable your organization to learn things you never thought possible. Let us delight your customers and empower your needs through pure data analytics.</p>
+						
+						<h3 class="ui header">Always up-to-date</h3>
+						<p>For as long as you're with us, </p>
+					</div>
+						
+					<div class="six wide right floated column">
+						<img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="center aligned column">
+						<a class="ui huge button">Check It Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="ui vertical stripe quote segment">
+			<div class="ui equal width stackable internally celled grid">
+			<div class="center aligned row">
+				<div class="column">
+				<h3>"What a Company"</h3>
+				<p>That is what they all say about us</p>
+				</div>
+				<div class="column">
+				<h3>"I shouldn't have gone with their competitor."</h3>
+				<p>
+					<img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+				</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="ui vertical stripe segment">
+			<div class="ui text container">
+				<h2 class="ui horizontal header divider"><i class="users icon"></i> Sponsors</h2>
+				
+				<div class="ui big center aligned selection list">
+					<div class="item">
+						<img class="ui image" src="/images/spark.png">
+						<div class="content">
+							<div class="header">SPARK</div>
+						</div>
+					</div>
+				</div>
+				
+				<h2 class="ui horizontal header divider">
+					<i class="travel icon"></i> Case Studies
+				</h2>
+				<h3 class="ui header">Discover Deis</h3>
+				<p>Over 200 acres of suburban beauty and rolling hills</p>
+				<a class="ui large button">Read more</a>
+			</div>
+		</div>
+
+
+		<div class="ui inverted vertical footer segment">
+			<div class="ui container">			
+				<div class="ui stackable inverted equal height stackable grid">
+					<div class="four wide column">
+						<div class="ui massive inverted horizontal link list">
+							<a href="https://www.facebook.com/DiscoverCampus/" class="item"><i class="facebook icon"></i></a>
+							<a href="https://twitter.com/DiscoverCampus" class="item"><i class="twitter icon"></i></a>
+							<a href="https://www.linkedin.com/company/discover-campus" class="item"><i class="linkedin icon"></i></a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header">About</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Team</a>
+							<a href="#" class="item">Press</a>
+							<a href="#" class="item">Investors</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header">&nbsp;</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Blog</a>
+							<a href="#" class="item">Careers</a>
+							<a href="#" class="item">Legal</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui horizontal right floated inverted small link list">
+					<div class="disabled item" href="#">Copyright <i class="copyright icon"></i> Discover Campus</div>
+					<div class="disabled item" href="#">All rights reserved</div>
+					<a class="item">Privacy</a>
+					<a class="item">Sitemap</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>
